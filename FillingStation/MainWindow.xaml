@@ -1,0 +1,24 @@
+﻿<Window x:Class="FillingStation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FillingStation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="350" ResizeMode="NoResize">
+    
+    <Grid>
+        
+        <TextBlock HorizontalAlignment="Left" Margin="44,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Бензин:"/>
+        <ComboBox Name="fuelBox" HorizontalAlignment="Left" Margin="114,58,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,159,0,0" TextWrapping="Wrap" Text="Еда:" VerticalAlignment="Top"/>
+        <ComboBox Name="foodBox" HorizontalAlignment="Left" Margin="114,153,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,110,0,0" TextWrapping="Wrap" Text="Сколько литров" VerticalAlignment="Top"/>
+        <TextBox Name="countLiter" HorizontalAlignment="Left" Height="24" Margin="114,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,200,0,0" TextWrapping="Wrap" Text="Сколько штук" VerticalAlignment="Top"/>
+        <TextBox Name="countFood" HorizontalAlignment="Left" Height="23" Margin="114,200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button Name="orderButton" Content="Оформить заказ" HorizontalAlignment="Left" Margin="210,276,0,0" VerticalAlignment="Top" Width="102" Click="orderButtonClick"/>
+
+    </Grid>
+    
+</Window>
